@@ -18,10 +18,19 @@
     <ClInclude Include="vector.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="fib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vector.cpp">
+    <ClCompile Include="源.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vector.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fib.cpp">
+      <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
