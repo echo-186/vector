@@ -75,7 +75,6 @@ ListNode<T> * List<T>::find(const T &e, ListNode<T>*p ,int n)const
 template<typename T>
 ListNode<T>* List<T>::search(const T & e, int n, ListNode<T>* p) const
 {
-	ListNode<T> *tem = p;
     ListNode<T>*tem = p->pred;
 	while (n--)
 	{

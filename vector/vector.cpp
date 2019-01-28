@@ -79,20 +79,22 @@ template<typename T>void vector<T>::shrink()
 }
 
 template<typename T>
-void vector<T>::merge(Rank lo, Rank hi,Rank mi)
+void vector<T>::merge(Rank lo, Rank hi, Rank mi)
 {
-	T *A = _elem + lo;//别忘了
+	/*T *A = _elem + lo;//别忘了
 	int lb = mi - lo;
 	T*B = new T[lb];
 	for (Rank i = 0; i < lb; B[i] = A[i++]);
 	int lc = hi - mi;
 	T*C = _elem + mi;
-	for (Rank i = 0, j = 0, k = 0; (j < lb) || (k < lc);)
+	for (Rank i = 0, j = 0, k = 0; ((j < lb) || (k < lc));)
 	{
-		if ((j < lb) && (lc <= k ||( B[j] <= C[k])))A[i++] = B[j++];
-		if((k<lc)&&(lb<=j||(C[k]<B[j]))A[i++]=C[k++];
+		if ((j < lb) && ((lc <= k )||( B[j] <= C[k]))
+			A[i++] = B[i++];
+	    if((k < lc) && (lb <= j || (C[k] < B[j]))
+			A[i++] = C[k++];
 	}
-	delete[]B;
+	delete[]B;*/
 }
 
 template<typename T>T vector<T>::remove(Rank r)

@@ -38,8 +38,8 @@ public:
 	int uniquify();//向量剔除重复元素（高效版本）,返回规模变化量
     Rank binsearch(T const&e, Rank lo, Rank hi);//二分查找（版本A）
 	Rank fibSearch(T const&e, Rank lo, Rank hi);
-	Rank binsearchB(T const&e, Rank lo, Rank hi);//版本B
-	void mergeSort(Rank lo, Rank hi);
+	Rank binsearchB(T const&e, Rank lo, Rank hi);//版本B(若返回lo也是不大于e的最大秩)
+	void mergeSort(Rank lo, Rank hi);//快速排序T(n)=T(n/2)+O(n)
 
 
 };
