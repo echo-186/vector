@@ -115,10 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="stack.h" />
+    <ClCompile Include="stack.cpp" />
+    <ClCompile Include="求值算法.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stack.cpp" />
+    <ClInclude Include="stack.h" />
+    <ClInclude Include="源.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
